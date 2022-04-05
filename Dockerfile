@@ -14,6 +14,10 @@ RUN apt update
 RUN \
 #    --mount=type=cache,target=/var/cache/apt,from=stage_cache,source=/var/cache/apt \
 #    --mount=type=cache,target=/var/lib/apt,from=stage_cache,source=/var/lib/apt \
+    DEBIAN_FRONTEND=noninteractive apt upgrade
+RUN \
+#    --mount=type=cache,target=/var/cache/apt,from=stage_cache,source=/var/cache/apt \
+#    --mount=type=cache,target=/var/lib/apt,from=stage_cache,source=/var/lib/apt \
     DEBIAN_FRONTEND=noninteractive apt install -y xz-utils git libgl1-mesa-glx
 
 # install nodejs
