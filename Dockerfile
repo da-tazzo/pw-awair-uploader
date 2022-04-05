@@ -14,7 +14,7 @@ RUN apt update
 RUN \
 #    --mount=type=cache,target=/var/cache/apt,from=stage_cache,source=/var/cache/apt \
 #    --mount=type=cache,target=/var/lib/apt,from=stage_cache,source=/var/lib/apt \
-    DEBIAN_FRONTEND=noninteractive apt upgrade
+    DEBIAN_FRONTEND=noninteractive apt upgrade -y
 RUN \
 #    --mount=type=cache,target=/var/cache/apt,from=stage_cache,source=/var/cache/apt \
 #    --mount=type=cache,target=/var/lib/apt,from=stage_cache,source=/var/lib/apt \
