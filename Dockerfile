@@ -18,7 +18,7 @@ RUN \
 
 # install nodejs
 RUN NODEJS_PATH=/usr/local \
-    NODEJS_VERSION=${ARG_NODEJS_VERSION:-v16.6.0} \
+    NODEJS_VERSION=${ARG_NODEJS_VERSION:-v16.14.2} \
     NODEJS_DISTRO=${ARG_NODEJS_DISTRO:-linux-x64} \
     && wget -qO- https://nodejs.org/dist/${NODEJS_VERSION}/node-${NODEJS_VERSION}-${NODEJS_DISTRO}.tar.xz \
         | tar --strip-components 1 -xJv -C ${NODEJS_PATH}
