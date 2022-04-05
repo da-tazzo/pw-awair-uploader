@@ -1,0 +1,11 @@
+version: '3'
+services:
+  pw-awair-uploader:
+    container_name: pw-awair-uploader
+    image: pw-awair-uploader
+    build: ./
+    restart: unless-stopped
+    ports:
+      - "5901:5901"
+      - "6901:6901"
+      - "3000:3000"
