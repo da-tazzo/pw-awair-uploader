@@ -14,7 +14,7 @@ clone the repo to your Docker host and start the image with
 `docker-compose up -d`
 
 #### when pulling from docker hub:
-[https://hub.docker.com/repository/docker/datazzo/pw-awair-uploader](https://hub.docker.com/repository/docker/datazzo/pw-awair-uploader)  
+[https://hub.docker.com/r/datazzo/pw-awair-uploader](https://hub.docker.com/r/datazzo/pw-awair-uploader)  
 type following commands in a shell on your docker host  
 `docker pull datazzo/pw-awair-uploader:latest`  
 followed by  
