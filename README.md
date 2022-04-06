@@ -36,6 +36,6 @@ By typing `./start-awair-uploader.sh` in the terminal window, you launch the awa
 Please follow instructions from [awair-uploader](https://github.com/Sheherezadhe/awair-uploader) on how to use the tool itself as described at [https://github.com/Sheherezadhe/awair-uploader](https://github.com/Sheherezadhe/awair-uploader)
 
 **BE AWARE: this is a quick solution to get the awair-uploader up and running, without running a laptop/PC 24/7**  
-the next step would be to start the awair-uploader with your credentials as parameters, so you don't have manual tasks after restarting teh container
+the next step would be to start the awair-uploader with your credentials as parameters, so you don't have manual tasks after restarting the container
 
 **DON'T MAKE THIS IMAGE ACCESSIBLE FROM THE INTERNET**, because it is not hardened and it may be used as jumphost to access/infiltrate your systems and/or local network or even undisclose your awair/planetwatch credentials.
