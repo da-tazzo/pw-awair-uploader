@@ -11,14 +11,8 @@ ENV AU_COMPILE_DIR=${ARG_AU_COMPILE_DIR:-/home/headless/awair-dev} \
 USER root
 
 RUN apt update
-RUN \
-#    --mount=type=cache,target=/var/cache/apt,from=stage_cache,source=/var/cache/apt \
-#    --mount=type=cache,target=/var/lib/apt,from=stage_cache,source=/var/lib/apt \
-    DEBIAN_FRONTEND=noninteractive apt upgrade -y
-RUN \
-#    --mount=type=cache,target=/var/cache/apt,from=stage_cache,source=/var/cache/apt \
-#    --mount=type=cache,target=/var/lib/apt,from=stage_cache,source=/var/lib/apt \
-    DEBIAN_FRONTEND=noninteractive apt install -y xz-utils git libgl1-mesa-glx
+RUN DEBIAN_FRONTEND=noninteractive apt upgrade -y
+RUN DEBIAN_FRONTEND=noninteractive apt install -y xz-utils git libgl1-mesa-glx
 
 # install nodejs
 RUN NODEJS_PATH=/usr/local \
